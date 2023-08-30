@@ -1,0 +1,182 @@
+::-webkit-scrollbar {
+  width: 10px;
+
+  &-thumb {
+    background-color: $red;
+    border-radius: 5px;
+  }
+
+  &-track {
+    background-color: $dark-blue;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  font-family: $font-family;
+  line-height: $line-height;
+}
+
+body {
+  margin-right: calc(-1 * (100vw - 100%));
+  overflow-x: hidden;
+  background-color: $dark-blue;
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
+a {
+  color: $black;
+}
+
+.wrap {
+  display: flex;
+  background: $dark-blue;
+  gap: 36px;
+  padding: 32px 0 32px 32px;
+
+  @media (max-width: 900px) {
+    padding: 25px 0 25px 25px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 0 25px;
+    gap: 0;
+  }
+}
+
+.main {
+  min-width: 0;
+  width: 100%;
+
+  @media (max-width: 600px) {
+    padding: 0 0 20px 20px;
+  }
+
+  @media (max-width: 375px) {
+    padding: 0 16px 20px 16px;
+  }
+}
+
+.trending__title,
+.recommended__title,
+.result__title,
+.movies__title,
+.series__title,
+.bookmarked-movies__title,
+.bookmarked-series__title {
+  color: $white;
+  font-size: 3.2rem;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  margin-bottom: 24px;
+
+  @media (max-width: 600px) {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+}
+
+.recommended,
+.movies,
+.series,
+.result,
+.bookmarked-movies,
+.bookmarked-series {
+  padding-right: 36px;
+
+  @media (max-width: 900px) {
+    padding-right: 25px;
+  }
+
+  @media (max-width: 600px) {
+    padding-right: 20px;
+  }
+
+  @media (max-width: 460px) {
+    padding-right: 16px;
+  }
+  @media (max-width: 375px) {
+    padding-right: 0px !important;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 40px;
+
+    @media (max-width: 1440px) {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+
+    @media (max-width: 1010px) {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    @media (max-width: 756px) {
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 25px;
+    }
+
+    @media (max-width: 600px) {
+      gap: 16px !important;
+    }
+
+    @media (max-width: 375px) {
+      grid-template-columns: repeat(auto-fill, minmax(135px, 1fr)) !important;
+    }
+  }
+}
+
+.bookmarked-movies {
+  margin-bottom: 40px;
+}
+
+.hide {
+  display: none !important;
+}
+
+.bookmarked > svg > path {
+  fill: $white;
+}
+
+.no-bookmarked {
+  font-size: 5rem;
+  color: $white;
+  opacity: 0.05;
+  text-align: center;
+  padding-top: 15vh;
+  padding-right: 36px;
+}
+
+.incorrect-input {
+  border-bottom: 1px solid $red !important;
+}
+
+.notify__title {
+  font-size: 1.6rem !important;
+}
+
+.notify {
+  @media (max-width: 900px) {
+    top: 105px;
+  }
+
+  @media (max-width: 600px) {
+    top: 70px;
+  }
+}
+
+.notifications-container {
+  @media (max-width: 460px) {
+    width: 250px !important;
+  }
+}

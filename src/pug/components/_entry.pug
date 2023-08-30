@@ -1,0 +1,38 @@
+.entry.hide
+   .entry__inner
+      .entry__logo
+         img(src=require("../../images/logo.svg"), alt="Logo")
+      .entry__form
+         .login-block
+            .login-block__top
+               h2.login-block__title Login
+               span.close-btn +
+            form
+               .field
+                  input(type="email" placeholder="Email address" required)
+                  span
+               .field
+                  input(type="password" placeholder="Password" required)
+                  span
+               button#login-form.entry__btn Login to your account
+            .login-block__subtitle
+               span Don’t have an account?
+               a#sign-up(href="") Sign Up
+         .sign-up-block.hide
+            .sign-up-block__top
+               h2.sign-up-block__title Sign Up
+               span.close-btn +
+            form
+               .field
+                  input(type="email" placeholder="Email address" required)
+                  span
+               .field
+                  input(type="password" placeholder="Password" required)
+                  span
+               .field
+                  input(type="password" placeholder="Repeat password" required)
+                  span
+               button#up-form.entry__btn Create an account
+            .sign-up-block__subtitle
+               span Already have an account?
+               a#login(href="") Login

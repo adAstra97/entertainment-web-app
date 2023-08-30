@@ -1,0 +1,7 @@
+.swiper-slide {
+   user-select: none;
+
+   @media (max-width: 1440px) {
+      max-width: 470px;
+   }
+}

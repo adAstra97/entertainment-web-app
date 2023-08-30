@@ -1,0 +1,173 @@
+.card {
+   position: relative;
+   overflow: hidden;
+   border-radius: 8px;
+
+
+   &:hover .card__hovered {
+      z-index: 1;
+      opacity: 1;
+   }
+
+   &:hover img {
+      transform: scale(1.1);
+
+   }
+
+   &__img img {
+      filter: brightness(85%);
+      transition: transform 0.5s;
+   }
+
+   &__bookmark {
+      position: absolute;
+      top: 16px;
+      right: 24px;
+      z-index: 2;
+      cursor: pointer;
+
+      @media (max-width: 460px) {
+         top: 8px;
+         right: 8px;
+      }
+
+      & circle, & path {
+         transition: 0.3s;
+      }
+
+      &:hover circle {
+         fill: $white;
+         opacity: 1;
+      }
+
+      &:hover path {
+         stroke: $dark-blue;
+      }
+   }
+
+   &__info {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+
+      @media (max-width: 1240px) {
+         bottom: 5px;
+         left: 16px;
+      }
+
+      @media (max-width: 460px) {
+         bottom: 8px;
+      }
+   }
+
+   &__info--top {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: $white;
+      opacity: 0.75;
+      position: relative;
+      z-index: 2;
+
+      @media (max-width: 600px) {
+         font-size: 1.2rem;
+      }
+
+      @media (max-width: 375px) {
+         gap: 5px;
+      }
+   }
+
+   &__hovered {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+      opacity: 0;
+      transition: z-index 0.3s, opacity 0.3s;
+   }
+
+   &__btn {
+      width: 117px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      gap: 19px;
+      align-items: center;
+      font-size: 1.8rem;
+      color: $white;
+      font-weight: 500;
+      border-radius: 28px;
+      padding: 9px;
+      background: rgba(255, 255, 255, 0.25);
+      cursor: pointer;
+      transition: background 0.25s;
+      outline: none;
+
+      @media (max-width: 460px) {
+         width: 90px;
+         padding: 5px;
+         gap: 10px;
+         font-size: 1.4rem;
+      }
+
+      &:hover {
+         background: rgb(252, 71, 71, 0.9);
+      }
+   }
+
+   &__title {
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: $white;
+      position: relative;
+      z-index: 2;
+
+      @media (max-width: 600px) {
+         font-size: 1.5rem;
+      }
+   }
+
+   &__bookmark--sm {
+      right: 16px;
+
+      @media (max-width: 900px) {
+         right: 8px;
+         top: 8px;
+      }
+
+      @media (max-width: 375px) {
+         top: 3px !important;
+         right: 3px !important;
+      }
+   }
+
+   &__info--sm {
+      position: static;
+      margin-top: 10px;
+   }
+
+   &__info-top--sm {
+      font-size: 1.3rem;
+
+      @media (max-width: 600px) {
+         font-size: 1.1rem;
+      }
+   }
+
+   &__title--sm {
+      font-size: 1.8rem;
+
+      @media (max-width: 600px) {
+         font-size: 1.4rem;
+      }
+   }
+
+   &__btn--sm {
+      transform: translate(-50%, -50%);
+   }
+}

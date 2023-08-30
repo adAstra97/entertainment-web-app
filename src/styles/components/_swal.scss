@@ -1,0 +1,83 @@
+.swal {
+   &-modal {
+      background-color: $light-blue;
+      border: 3px solid $dark-blue;
+      margin-right: calc(-1 * (100vw - 100%));
+   }
+
+   &-title,
+   &-text {
+      color: $white;
+      text-align: center;
+   }
+
+   &-footer {
+      display: flex;
+      justify-content: center;
+   }
+
+   &-button--confirm,
+   &-button--exit {
+      background-color: $red;
+      border-radius: 6px;
+      padding: 10px 35px;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: $white;
+      margin: 25px 0;
+      transition: 0.2s ease-out;
+
+      &:hover {
+         background-color: $white !important;
+         color: $dark-blue !important;
+      }
+
+      &:active {
+         box-shadow: 0 0 5px #000 inset;
+         background-color: $red;
+      }
+   }
+
+   &-button--exit {
+      margin: 0;
+   }
+
+   &-button--cancel {
+      background-color: transparent;
+      color: $white;
+      border: 1px solid $white;
+      transition: 0.2s;
+      font-weight: 400;
+
+      &:hover {
+         background-color: $white;
+         color: $dark-blue;
+         border: 1px solid $white;
+      }
+
+      &:active {
+         box-shadow: 0 0 5px #000 inset;
+         color: $dark-blue;
+      }
+   }
+
+   &-icon--error,
+   &-icon--success,
+   &-icon--success__ring {
+      border-color: $red;
+   }
+   &-icon--error__line {
+      background-color: $red;
+   }
+
+   &-icon--success:before,
+   &-icon--success:after,
+   &-icon--success__hide-corners {
+      background-color: $light-blue;
+   }
+
+   &-icon--success__line--long,
+   &-icon--success__line--tip {
+      background-color: $red;
+   }
+}

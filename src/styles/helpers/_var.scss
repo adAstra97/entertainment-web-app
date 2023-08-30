@@ -1,0 +1,20 @@
+$red: #fc4747;
+$black: #000;
+$white: #fff;
+$gray: #5a698f;
+$light-blue: #161d2f;
+$dark-blue: #10141e;
+// Fonts
+$font-family: 'Outfit', sans-serif;
+
+// Line-Height
+$line-height: 1.5;
+
+// Media
+$breakpoints: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px,
+) !default;

@@ -1,0 +1,21 @@
+@import './styles/helpers/var';
+@import './styles/helpers/mixins';
+@import './styles/helpers/animations';
+
+@import './styles/base/fonts';
+@import './styles/base/reset';
+@import './styles/base/base';
+
+@import './styles/layout/header';
+@import './styles/layout/trending';
+@import './styles/layout/slider';
+@import './styles/layout/404';
+
+@import './styles/components/menu';
+@import './styles/components/preloader';
+@import './styles/components/user';
+@import './styles/components/search';
+@import './styles/components/card';
+@import './styles/components/entry';
+@import './styles/components/swal';
+
