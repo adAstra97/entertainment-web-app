@@ -44,6 +44,7 @@ Users should be able to:
 - Pug
 - SCSS
 - Native JavaScript
+- Webpack
 - Swiper JS - slider
 - SweetAlert JS - for pop-ups
 - Simple Notify JS - for notifications
