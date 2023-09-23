@@ -52,4 +52,4 @@ Users should be able to:
 
 ### What I learned
 
-Firebase, authentication, authorization, SPA
+Firebase, authentication, authorization, SPA, debounce function
